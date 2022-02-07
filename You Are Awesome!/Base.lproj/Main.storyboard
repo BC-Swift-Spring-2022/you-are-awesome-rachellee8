@@ -30,15 +30,29 @@
                                         <rect key="frame" x="8" y="160" width="359" height="499"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoA-BH-3K5">
-                                        <rect key="frame" x="115" y="116" width="145" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoA-BH-3K5">
+                                        <rect key="frame" x="218" y="110" width="149" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Show Message"/>
                                         <connections>
                                             <action selector="messageButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eyz-vF-762"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Play Sound:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PG8-oS-axM">
+                                        <rect key="frame" x="8" y="115" width="90" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fTJ-AM-7P2">
+                                        <rect key="frame" x="106" y="110" width="49" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="playSoundToggled:" destination="BYZ-38-t0r" eventType="valueChanged" id="IuU-Y7-5Ab"/>
+                                        </connections>
+                                    </switch>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -55,11 +69,12 @@
                     <connections>
                         <outlet property="imageView" destination="zh7-PW-1fy" id="tTJ-1l-Qfj"/>
                         <outlet property="messageLabel" destination="PHb-EJ-cfd" id="rY3-cS-OsB"/>
+                        <outlet property="playSoundSwitch" destination="fTJ-AM-7P2" id="hqT-Tl-NuL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="17.39130434782609" y="67.633928571428569"/>
+            <point key="canvasLocation" x="16.800000000000001" y="67.016491754122939"/>
         </scene>
     </scenes>
     <resources>
